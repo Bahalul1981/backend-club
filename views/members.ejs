@@ -1,0 +1,23 @@
+<%-include("layout/header.ejs")%>
+
+    <body>
+     
+        <main>
+            <div class="membersdata">
+                <h2> Click on member name to see details</h2>
+                    <ul>
+                        <% members.forEach(element => { %>
+                        
+                            <li><a href="/newmember/<%= element._id %>"><%= element.name %></a></li>
+
+                        <%  }); %>
+                        
+                            
+                        </ul>
+                        
+            </div>
+        </main>
+
+    </body>
+
+<%-include("layout/footer.ejs")%>

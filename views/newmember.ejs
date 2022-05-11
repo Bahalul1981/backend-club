@@ -1,0 +1,42 @@
+
+
+
+
+
+ <%-include("layout/header.ejs")%>
+
+ 
+
+    <body>
+          <main>
+            <form action="/newmember" method="post">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+              <br><br>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+              <br><br>
+              <label for="tel">Telephonnummer</label>
+              <input type="number" id="tel" name="tel">
+              <br><br>
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date">
+              <br><br>
+              <button>Save</button>
+            </form>
+      
+            <li>
+              <% mynewusers.forEach(element => { %>
+              
+                  <h2><%= element.name %></h2>
+      
+              <%  }); %>
+                
+                  
+            </li>   
+          
+          </main>
+        
+    </body>
+
+<%-include("layout/footer.ejs")%>

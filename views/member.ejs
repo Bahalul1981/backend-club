@@ -1,0 +1,20 @@
+<%-include("layout/header.ejs")%>
+
+    <body>
+     
+        <main>
+            <div class="membersdata">
+                <h2> Click on member name to see details</h2>
+                <p><%= Name%></p>
+                <p><%= Email%></p>
+                <p><%= Telephon%></p>
+                <p><%= Data%></p>
+                <button id="deletbutton"><a href="/deletemember/<%= Id %>"><h4>Remove Member</h4></a></button>
+            </div>
+           
+            
+        </main>
+
+    </body>
+
+<%-include("layout/footer.ejs")%>

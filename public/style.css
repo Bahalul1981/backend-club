@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.161);
+    color: rgba(3, 77, 7, 0.859);
+    text-shadow: rgba(0, 0, 0, 0.514) 5px 5px 5px;
+    box-shadow: rgba(36, 53, 52, 0.353) 2px 2px 2px;
+    height: 200px;
+   background-color: rgba(121, 156, 123, 0.589);
+  
+}
+h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.077);
+    background-image: url("/image/header.png");
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.161);
+    color: rgba(43, 59, 51, 0.859);
+    text-shadow: rgba(0, 0, 0, 0.514) 5px 5px 5px;
+    font-size: 3.9rem;
+    padding: 70px;
+}
+
+
+
+nav ul{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.565);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    
+    
+}
+
+nav ul li a{
+    font-size: 22px;
+    color: rgba(226, 235, 235, 0.742);
+    text-shadow: rgb(14, 18, 32) 5px 5px 5px;
+   
+}
+
+header{
+    
+    background-color: rgba(3, 105, 3, 0.43);
+    box-shadow: rgba(36, 53, 52, 0.353) 3px 3px 3px;
+    
+}
+
+main{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(101, 211, 61, 0.141);
+    height: 1000px;
+    text-align: center;
+    
+}
+.myimg{
+  background-position: center;
+  width: 80%;
+  height: 80%;
+}
+.membersdata{
+   font-size: 2rem;
+   color: rgb(30, 95, 0);
+
+}
+.displayall li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(66, 48, 48, 0.859);
+    background-color: rgba(101, 211, 61, 0.141);
+    font-size: 1.5rem;
+}
+
+#deletbutton{
+    height: 30px;
+    width: 150px;
+    background-color: rgba(255, 0, 0, 0.653);
+    border-radius: 5px;
+}
+/* responsive websida  */
+@media only screen and (max-width: 900px) {
+    * h1,  nav ul li a,.flexcenter,main{
+        background-repeat: no-repeat;
+        color: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: auto;
+    }
+  }
+
